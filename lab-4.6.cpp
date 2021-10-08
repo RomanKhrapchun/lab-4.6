@@ -17,7 +17,7 @@ int main()
         i = 1;
         while (i <= n)
         {
-            Pp *= (i * i);
+            Pp *= (1. * i * i);
             i++;    
         }
 
@@ -25,7 +25,7 @@ int main()
         i = n;
         while (i <= 10)
         {
-            Pd *= (i * i);
+            Pd *= (1. * i * i);
             i++;
         }
         S += (Pp + Pd) / n;
@@ -42,7 +42,7 @@ int main()
         i = 1;
         do
         {
-            Pp *= (i * i);
+            Pp *= (1. * i * i);
             i++;
         } while (i <= n);
 
@@ -50,7 +50,7 @@ int main()
         i = n;
         do
         {
-            Pd *= (i * i);
+            Pd *= (1. * i * i);
             i++;
         } while (i <= 10);
         S += (Pp + Pd) / n;
@@ -65,13 +65,13 @@ int main()
         Pp = 1;
         for (i = 1; i <= n; i++)
         {
-            Pp *= (i * i);
+            Pp *= (1. * i * i);
         }
 
         Pd = 1;
         for (i = n; i <= 10; i++)
         {
-            Pd *= (i * i);
+            Pd *= (1. * i * i);
         }
         S += (Pp + Pd) / n;
     }
@@ -84,13 +84,13 @@ int main()
         Pp = 1;
         for (i = n; i >= 1; i--)
         {
-            Pp *= (i * i);
+            Pp *= (1. * i * i);
         }
 
         Pd = 1;
         for (i = 10; i >= n; i--)
         {
-            Pd *= (i * i);
+            Pd *= (1. * i * i);
         }
         S += (Pp + Pd) / n;
     }
