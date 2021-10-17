@@ -94,7 +94,7 @@ int main()
         }
         S += (Pp + Pd) / n;
     }
-    cout << "3) S = ";
+    cout << "4) S = ";
     cout << S << endl;
 
     return 0;
